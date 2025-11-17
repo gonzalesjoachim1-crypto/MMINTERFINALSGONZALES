@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
+
+/* Font Classes */
+.font-bartle {
+  font-family: "BBH Sans Bartle", sans-serif;
+}
+
+.font-bogle {
+  font-family: "BBH Sans Bogle", sans-serif;
+}
+
+/* Body & Background */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('MAINCOVER.jpg') center/cover no-repeat;
+  font-family: "BBH Sans Hegarty", sans-serif;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 4px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  z-index: 2;
+}
+
+.left h1 {
+  font-size: 110px;
+  color: white;
+  font-weight: 900;
+  line-height: 0.95;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 18px 60px;
+  background: #b8481e;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+/* Right Section / Logo */
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bslogo {
+  width: 420px;
+  border-radius: 30px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==============================
+   Responsive Styles (Mobile)
+================================= */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 0 40px;
+  }
+
+  .left h1 {
+    font-size: 70px;
+  }
+
+  .btn {
+    padding: 16px 50px;
+    font-size: 18px;
+  }
+
+  .bslogo {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+  }
+
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .left h1 {
+    font-size: 50px;
+    line-height: 1.1;
+  }
+
+  .btn {
+    padding: 12px 40px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .right {
+    margin-top: 30px;
+  }
+
+  .bslogo {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left h1 {
+    font-size: 36px;
+  }
+
+  .btn {
+    padding: 10px 30px;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .bslogo {
+    width: 200px;
+  }
+}
+
